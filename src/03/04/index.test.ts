@@ -1,4 +1,4 @@
-import { add, sub } from ".";
+import { add, sub, multiple, div } from ".";
 
 describe("四則演算", () => {
   describe("add", () => {
@@ -15,6 +15,16 @@ describe("四則演算", () => {
     });
     test("返り値の合計は、下限が'0'である", () => {
       expect(sub(70, 80)).toBe(0);
+    });
+  });
+  describe("testMul", () => {
+    test("返り値は、第一引数と第二引数の「積」である", () => {
+      expect(multiple(2, 3)).toBe(6);
+    });
+  });
+  describe("testDiv", () => {
+    test("返り値は、第一引数と第二引数の「商」である", () => {
+      expect(div(6, 3)).toBe(2);
     });
   });
 });

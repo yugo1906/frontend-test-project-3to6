@@ -13,3 +13,11 @@ export function sub(a: number, b: number) {
   }
   return sum;
 }
+
+export function multiple(a: number, b: number) {
+  return a * b;
+}
+
+export function div(a: number, b: number) {
+  return a / b;
+}
